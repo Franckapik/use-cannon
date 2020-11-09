@@ -38,9 +38,9 @@
     "printWidth": 110
   },
   "peerDependencies": {
-    "react": ">=16.13",
-    "react-dom": ">=16.13",
-    "react-three-fiber": ">=5.0",
+    "react": ">=17.0.1",
+    "react-dom": ">=17.0.1",
+    "react-three-fiber": ">=5.1.9",
     "typescript": ">=3.9"
   },
   "devDependencies": {
