@@ -1,7 +1,7 @@
 import React, { forwardRef, useEffect, useRef, useState } from 'react'
 import { Canvas, extend, useFrame, useThree } from 'react-three-fiber'
-import { useCylinder } from 'use-cannon'
-import { Physics, useBox, usePlane, useRaycastVehicle } from 'use-cannon'
+import { useCylinder } from '@react-three/cannon'
+import { Physics, useBox, usePlane, useRaycastVehicle } from '@react-three/cannon'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
 // Extend will make OrbitControls available as a JSX element called orbitControls for us to use.
