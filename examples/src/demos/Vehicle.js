@@ -268,7 +268,7 @@ const defaultContactMaterial = {
 
 const VehicleScene = () => {
   return (
-    <Canvas shadowMap sRGB camera={{ position: [0, 5, 20], fov: 50 }}>
+    <Canvas shadowMap camera={{ position: [0, 5, 20], fov: 50 }}>
       <CameraControls />
       <color attach="background" args={['#171720']} />
       <ambientLight intensity={0.5} />
