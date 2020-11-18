@@ -324,20 +324,32 @@ export function useBox(fn: BoxFn, bounding?: boolean, fwdRef?: React.MutableRefO
   useBoundingBoxes(args[0], bounding)
   return args
 }
-export function useCylinder(fn: CylinderFn, fwdRef?: React.MutableRefObject<THREE.Object3D>) {
+export function useCylinder(
+  fn: CylinderFn,
+  bounding?: boolean,
+  fwdRef?: React.MutableRefObject<THREE.Object3D>
+) {
   const args = useBody('Cylinder', fn, (args) => args, fwdRef)
-  useBoundingBoxes(args[0])
+  useBoundingBoxes(args[0], bounding)
   return args
 }
-export function useHeightfield(fn: HeightfieldFn, fwdRef?: React.MutableRefObject<THREE.Object3D>) {
+export function useHeightfield(
+  fn: HeightfieldFn,
+  bounding?: boolean,
+  fwdRef?: React.MutableRefObject<THREE.Object3D>
+) {
   return useBody('Heightfield', fn, (args) => args, fwdRef)
 }
-export function useParticle(fn: ParticleFn, fwdRef?: React.MutableRefObject<THREE.Object3D>) {
+export function useParticle(
+  fn: ParticleFn,
+  bounding?: boolean,
+  fwdRef?: React.MutableRefObject<THREE.Object3D>
+) {
   return useBody('Particle', fn, () => [], fwdRef)
 }
-export function useSphere(fn: SphereFn, fwdRef?: React.MutableRefObject<THREE.Object3D>) {
+export function useSphere(fn: SphereFn, bounding?: boolean, fwdRef?: React.MutableRefObject<THREE.Object3D>) {
   const args = useBody('Sphere', fn, (radius) => [radius ?? 1], fwdRef)
-  useBoundingBoxes(args[0])
+  useBoundingBoxes(args[0], bounding)
   return args
 }
 export function useTrimesh(fn: TrimeshFn, fwdRef?: React.MutableRefObject<THREE.Object3D>) {
@@ -355,7 +367,11 @@ export function useTrimesh(fn: TrimeshFn, fwdRef?: React.MutableRefObject<THREE.
     fwdRef
   )
 }
-export function useConvexPolyhedron(fn: ConvexPolyhedronFn, fwdRef?: React.MutableRefObject<THREE.Object3D>) {
+export function useConvexPolyhedron(
+  fn: ConvexPolyhedronFn,
+  bounding?: boolean,
+  fwdRef?: React.MutableRefObject<THREE.Object3D>
+) {
   const args = useBody(
     'ConvexPolyhedron',
     fn,
@@ -371,7 +387,7 @@ export function useConvexPolyhedron(fn: ConvexPolyhedronFn, fwdRef?: React.Mutab
     },
     fwdRef
   )
-  useBoundingBoxes(args[0])
+  useBoundingBoxes(args[0], bounding)
   return args
 }
 export function useCompoundBody(fn: CompoundBodyFn, fwdRef?: React.MutableRefObject<THREE.Object3D>) {
