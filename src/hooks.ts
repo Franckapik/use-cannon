@@ -154,7 +154,7 @@ function apply(object: THREE.Object3D, index: number, buffers: Buffers) {
   }
 }
 
-function useBoundingBoxes(ref: any) {
+function useBoundingBoxes(ref: any, bounding?: boolean) {
   useEffect(() => {
     const object = ref.current
     if (object) {
@@ -165,7 +165,9 @@ function useBoundingBoxes(ref: any) {
       const helper = new Box3Helper(box, new Color('0xffffff'))
       helper.renderOrder = 10000000
       ;(helper.material as any).depthTest = false
-      object.add(helper)
+      if (bounding) {
+        object.add(helper)
+      }
       return () => void object.remove(helper)
     }
   }, [])
@@ -317,9 +319,9 @@ function useBody(
 export function usePlane(fn: PlaneFn, fwdRef?: React.MutableRefObject<THREE.Object3D>) {
   return useBody('Plane', fn, () => [], fwdRef)
 }
-export function useBox(fn: BoxFn, fwdRef?: React.MutableRefObject<THREE.Object3D>) {
+export function useBox(fn: BoxFn, bounding?: boolean, fwdRef?: React.MutableRefObject<THREE.Object3D>) {
   const args = useBody('Box', fn, (args) => args || [0.5, 0.5, 0.5], fwdRef)
-  useBoundingBoxes(args[0])
+  useBoundingBoxes(args[0], bounding)
   return args
 }
 export function useCylinder(fn: CylinderFn, fwdRef?: React.MutableRefObject<THREE.Object3D>) {

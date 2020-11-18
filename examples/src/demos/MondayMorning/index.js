@@ -42,7 +42,7 @@ const BodyPart = ({ config, children, render, name, ...props }) => {
   const { color, args, mass, position } = shapes[name]
   const scale = useMemo(() => args.map((s) => s * 2), [args])
   const parent = useContext(context)
-  const [ref] = useBox(() => ({ mass, args, position, linearDamping: 0.99 }))
+  const [ref] = useBox(() => ({ mass, args, position, linearDamping: 0.99 }), true)
   useConeTwistConstraint(ref, parent, config)
   const bind = useDragConstraint(ref)
   return (
