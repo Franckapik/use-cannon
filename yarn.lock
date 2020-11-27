@@ -881,7 +881,7 @@
     pirates "^4.0.0"
     source-map-support "^0.5.16"
 
-"@babel/runtime@^7.12.1":
+"@babel/runtime@7.12.5":
   version "7.12.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
   integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
@@ -927,11 +927,6 @@
     "@babel/helper-validator-identifier" "^7.10.4"
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
-
-"@juggle/resize-observer@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.2.0.tgz#5e0b448d27fe3091bae6216456512c5904d05661"
-  integrity sha512-fsLxt0CHx2HCV9EL8lDoVkwHffsA0snUpddYjdLyXcG5E41xaamn9ZyQqOE9TUJdrRlH8/hjIf+UdOdDeKCUgg==
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
@@ -1467,13 +1462,6 @@ find-cache-dir@^2.0.0, find-cache-dir@^2.1.0:
     make-dir "^2.0.0"
     pkg-dir "^3.0.0"
 
-find-up@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/find-up/-/find-up-2.1.0.tgz#45d1b7e506c717ddd482775a2b77920a3c0c57a7"
-  integrity sha1-RdG35QbHF93UgndaK3eSCjwMV6c=
-  dependencies:
-    locate-path "^2.0.0"
-
 find-up@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-3.0.0.tgz#49169f1d7993430646da61ecc5ae355c21c97b73"
@@ -1711,14 +1699,6 @@ loader-utils@^1.4.0:
     emojis-list "^3.0.0"
     json5 "^1.0.1"
 
-locate-path@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-2.0.0.tgz#2b568b265eec944c6d9c0de9c3dbbbca0354cd8e"
-  integrity sha1-K1aLJl7slExtnA3pw9u7ygNUzY4=
-  dependencies:
-    p-locate "^2.0.0"
-    path-exists "^3.0.0"
-
 locate-path@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-3.0.0.tgz#dbec3b3ab759758071b58fe59fc41871af21400e"
@@ -1870,26 +1850,12 @@ p-finally@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-finally/-/p-finally-2.0.1.tgz#bd6fcaa9c559a096b680806f4d657b3f0f240561"
   integrity sha512-vpm09aKwq6H9phqRQzecoDpD8TmVyGw70qmWlyq5onxY7tqyTTFVvxMykxQSQKILBSFlbXpypIw2T1Ml7+DDtw==
 
-p-limit@^1.1.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-1.3.0.tgz#b86bd5f0c25690911c7590fcbfc2010d54b3ccb8"
-  integrity sha512-vvcXsLAJ9Dr5rQOPk7toZQZJApBl2K4J6dANSsEuh6QI41JYcsS/qhTGa9ErIUUgK3WNQoJYvylxvjqmiqEA9Q==
-  dependencies:
-    p-try "^1.0.0"
-
 p-limit@^2.0.0, p-limit@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-2.3.0.tgz#3dd33c647a214fdfffd835933eb086da0dc21db1"
   integrity sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==
   dependencies:
     p-try "^2.0.0"
-
-p-locate@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/p-locate/-/p-locate-2.0.0.tgz#20a0103b222a70c8fd39cc2e580680f3dde5ec43"
-  integrity sha1-IKAQOyIqcMj9OcwuWAaA893l7EM=
-  dependencies:
-    p-limit "^1.1.0"
 
 p-locate@^3.0.0:
   version "3.0.0"
@@ -1904,11 +1870,6 @@ p-locate@^4.1.0:
   integrity sha512-R79ZZ/0wAxKGu3oYMlz8jy/kbhsNrS7SKZ7PxEHBgJ5+F2mtFW2fK2cOtBh1cHYkQsbzFV7I+EoRKe6Yt0oK7A==
   dependencies:
     p-limit "^2.2.0"
-
-p-try@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
-  integrity sha1-y8ec26+P1CKOE/Yh8rGiN8GyB7M=
 
 p-try@^2.0.0:
   version "2.2.0"
@@ -1988,13 +1949,6 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-pkg-up@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-2.0.0.tgz#c819ac728059a461cab1c3889a2be3c49a004d7f"
-  integrity sha1-yBmscoBZpGHKscOImivjxJoATX8=
-  dependencies:
-    find-up "^2.1.0"
-
 please-upgrade-node@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/please-upgrade-node/-/please-upgrade-node-3.2.0.tgz#aeddd3f994c933e4ad98b99d9a556efa0e2fe942"
@@ -2063,20 +2017,19 @@ react-reconciler@0.26.1:
     object-assign "^4.1.1"
     scheduler "^0.20.1"
 
-react-three-fiber@^5.0.6:
-  version "5.1.9"
-  resolved "https://registry.yarnpkg.com/react-three-fiber/-/react-three-fiber-5.1.9.tgz#58e9c8cfd6f4cf9ed735f6d7839f5d7a000f2ee6"
-  integrity sha512-Gw6sQ1CR5WceuVN6di+vormJCCEaJtKIqWsNxW+iaN77HPNdhICOwtHS96j8+3u/BB7j4nOl4rIBDE36+hk8qA==
+react-three-fiber@^5.0.1:
+  version "5.3.3"
+  resolved "https://registry.yarnpkg.com/react-three-fiber/-/react-three-fiber-5.3.3.tgz#13e73ee57f21d1fb313e426df0bcaf750192edd3"
+  integrity sha512-qFsgiyaP3xvA/DsFAcppIQ15fqnDgE3hR/LNLwI8aakFLyyIYS3d+6OLYOBw6hlYG94CVT5KJ/xwXx+w8/UACA==
   dependencies:
-    "@babel/runtime" "^7.12.1"
-    "@juggle/resize-observer" "^3.2.0"
+    "@babel/runtime" "7.12.5"
     react-merge-refs "^1.1.0"
     react-reconciler "0.26.1"
     react-use-measure "^2.0.3"
     resize-observer-polyfill "^1.5.1"
     scheduler "0.20.1"
     tiny-emitter "^2.1.0"
-    use-asset "^0.1.4"
+    use-asset "0.2.0"
     utility-types "^3.10.0"
 
 react-use-measure@^2.0.3:
@@ -2338,10 +2291,10 @@ terser@^4.7.0:
     source-map "~0.6.1"
     source-map-support "~0.5.12"
 
-three@^0.122:
-  version "0.122.0"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.122.0.tgz#bd9ed8a8820074856e8ba7b63fe0a65176e01aeb"
-  integrity sha512-bgYMo0WdaQhf7DhLE8OSNN/rVFO5J4K1A2VeeKqoV4MjjuHjfCP6xLpg8Xedhns7NlEnN3sZ6VJROq19Qyl6Sg==
+three@^0.120.1:
+  version "0.120.1"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.120.1.tgz#dbd8894f8ab87c109f1602933e7c740c98137377"
+  integrity sha512-ktaCRFUR7JUZcKec+cBRz+oBex5pOVaJhrtxvFF2T7on53o9UkEux+/Nh1g/4zeb4t/pbxIFcADbn/ACu3LC1g==
 
 tiny-emitter@^2.1.0:
   version "2.1.0"
@@ -2398,10 +2351,10 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-use-asset@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/use-asset/-/use-asset-0.1.4.tgz#f5cd4fda9f3d91268dd6b2c26d38d0ad159b6a1d"
-  integrity sha512-HgCtnRQeQrbOKCgrEmEw34PBOzkfP+sc1E/l/IOB3JiFNLLCz94pvIzBXv53d3W/5L4TVAEFyzu7XtSBg+D/dA==
+use-asset@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/use-asset/-/use-asset-0.2.0.tgz#e626f5d16e0ac5861f35d098fa224a6b3067049d"
+  integrity sha512-vNZlJJjzIU+ChWTuJmI3cZKH9oO1QacV0EaRrNUoNPaP5M91NyuWcRy7yWAG4BFyQqkpmzhnw1ahA0B3HgHcZw==
   dependencies:
     fast-deep-equal "^3.1.3"
 
