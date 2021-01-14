@@ -106,13 +106,16 @@ const Wheel = forwardRef((props, ref) => {
 
 function Pilar(props) {
   const args = [0.7, 0.7, 5, 16]
-  const [ref] = useCylinder(() => ({
-    mass: 10,
+  const [ref, api] = useCylinder(() => ({
+    mass: 0,
     args: args,
     ...props,
   }))
+  const setMass = (mass) => {
+    api.mass.set(mass)
+  }
   return (
-    <mesh ref={ref} castShadow>
+    <mesh ref={ref} castShadow onClick={() => setMass(5)}>
       <cylinderBufferGeometry attach="geometry" args={args} />
       <meshNormalMaterial attach="material" />
     </mesh>

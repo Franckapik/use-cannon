@@ -239,6 +239,8 @@ self.onmessage = (e) => {
       break
     case 'setMass':
       bodies[uuid].mass = props
+      bodies[uuid].type = 1
+      bodies[uuid].updateMassProperties()
       break
     case 'setLinearDamping':
       bodies[uuid].linearDamping = props
